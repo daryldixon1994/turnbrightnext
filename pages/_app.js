@@ -3,9 +3,10 @@ import { GlobalStyles } from "twin.macro";
 import NavBar from "@/components/navbar/NavBar";
 import Footer from "@/components/footer/Footer";
 import "../styles/style.css";
+import ContactUs from "@/components/contactUs/ContactUs";
 export default function App({ Component, pageProps }) {
   const [offset, setOffset] = useState(0);
- 
+
   useEffect(() => {
     const onScroll = () => {
       setOffset(window.pageYOffset);
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyles />
+      <ContactUs />
       <NavBar offset={offset} />
       <Component {...pageProps} />
       <Footer />

@@ -8,7 +8,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 import { RiInstagramFill, RiLinkedinBoxFill } from "react-icons/ri";
 import { TbChevronUpRight } from "react-icons/tb";
 import { FaTiktok } from "react-icons/fa";
-const Container = tw.div`box-border font-poppins px-12 py-4 bg-[#1d78cb] lg:h-[300px] lg:grid grid-cols-1 grid-rows-2`;
+const Container = tw.div`box-border font-poppins px-12 py-4 bg-[rgb(0, 20, 54, 0.75)] lg:h-[300px] lg:grid grid-cols-1 grid-rows-2`;
 const Bloc1 = tw.div`row-span-2 grid grid-cols-4 lg:w-[75%] lg:mx-auto`;
 const Bloc2 = tw.div`flex items-center justify-around gap-[20px]`;
 const Head = tw.div`flex items-center`;
