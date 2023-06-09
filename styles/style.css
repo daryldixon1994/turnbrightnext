@@ -68,13 +68,13 @@ body::-webkit-scrollbar-thumb {
   border: transparent;
 }
 .event-media-col1 {
-  background-image: url("../src/assets/images/event-img-1.png");
+  /* background-image: url("../src/assets/images/event-img-1.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .event-media-col2 {
-  background-image: url("../src/assets/images/event-img-2.png");
+  /* background-image: url("../src/assets/images/event-img-2.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
