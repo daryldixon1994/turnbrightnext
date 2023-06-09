@@ -39,7 +39,7 @@ function FeaturedNews() {
   return (
     <Container>
       <Header1 title1={"Featured"} title2={"NEWS"} />
-      <NewsList data={data} h={160} p={4} border={true} />
+      <NewsList data={data} h={160} p={4} border={true} w={400} itemH={120} />
       <Media />
     </Container>
   );

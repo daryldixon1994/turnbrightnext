@@ -79,7 +79,7 @@ function OurEvent() {
             </H1>
           </Col> */}
         </TwoCols>
-        <NewsList data={data2} h={350} p={10} border={false} />
+        <NewsList data={data2} h={350} p={10} w={300} border={false} itemH={320} />
       </Media>
     </Container>
   );

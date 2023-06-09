@@ -4,14 +4,14 @@ import NewsItem from "./NewsItem";
 
 const Container = tw.div`box-border overflow-x-auto w-[100%] flex gap-[20px] lg:my-8`;
 
-function NewsList({ data, h, p, border }) {
+function NewsList({ data, h, p, border, w, itemH }) {
   return (
     <Container
       className="news-scroll-box"
       style={{ height: `${h}px`, padding: `${p}px` }}
     >
       {data.map((elt, i) => (
-        <NewsItem {...elt} key={i} border={border} />
+        <NewsItem {...elt} key={i} border={border} w={w} itemH={itemH} />
       ))}
     </Container>
   );
