@@ -91,4 +91,9 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   top: -22.5%;
 }
-
+.fan-club-drop {
+  display: none;
+}
+.fan-head:hover .fan-club-drop {
+  display: block;
+}

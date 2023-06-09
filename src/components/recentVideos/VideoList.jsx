@@ -20,7 +20,7 @@ const videos = [
 ];
 function AsideVideos() {
   return (
-    <Container id="aside-video-sugg">
+    <Container className="news-scroll-box" id="aside-video-sugg">
       {videos.map((video, i) => (
         <VideoItem key={i}>
           <Image src={Img} alt="" />

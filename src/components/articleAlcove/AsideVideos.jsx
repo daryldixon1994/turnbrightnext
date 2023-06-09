@@ -53,7 +53,7 @@ const videos = [
 function AsideVideos() {
   return (
     <Container id="aside-video-sugg">
-      <SubContainer>
+      <SubContainer className="news-scroll-box">
         <H1>flashbacks Videos</H1>
         {videos.map((video, i) => (
           <VideoItem key={i}>
