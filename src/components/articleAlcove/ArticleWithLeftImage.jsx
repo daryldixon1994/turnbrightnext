@@ -10,7 +10,7 @@ const Extra = tw.div`box-border flex justify-between`;
 const NewExtra = tw.div`box-border flex gap-[10px]`;
 const Pic = tw.div`border-2 border-black`;
 const NewFooter = tw.footer`flex flex-col items-end`;
-const H1 = tw.h1`font-poppins font-black text-[#001436] text-5xl mt-0 uppercase`;
+const H1 = tw.a`font-poppins font-black text-[#001436] text-5xl mt-0 uppercase hover:underline`;
 const H2 = tw.h2`font-poppins font-medium text-[#001436] text-3xl mt-0 uppercase`;
 const P = tw.p`font-poppins text-base text-[#323030] uppercase lg:mb-2`;
 const NewContent = tw.div``;
@@ -34,7 +34,9 @@ function ArticleWithLeftImage({
     <Container>
       <Head>
         <H2>{subTitle}</H2>
-        <H1>{title}</H1>
+        <H1 href="https://www.blick.ch/wirtschaft/trotz-akutem-fachkraeftemangel-73000-kaderleuten-in-der-schweiz-droht-jobverlust-id17746210.html" target="_blank">
+          {title}
+        </H1>
       </Head>
       <Body>
         {/* <Pic> */}

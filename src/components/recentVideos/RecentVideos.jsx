@@ -16,6 +16,7 @@ const Body = tw.div`box-border mb-24 flex justify-between`;
 const P = tw.p`text-[#323030] uppercase leading-relaxed lg:mt-4 font-poppins font-medium`;
 const Link = tw.span`text-[#323030] uppercase leading-relaxed lg:mt-4 font-poppins  inline font-black hover:underline hover:cursor-pointer`;
 const VideoContainer = tw.div`w-[60%]`;
+const Extink = tw.a``;
 // const Image = tw.img`w-[803px]`;
 // Image.defaultProps = {
 //   src: Video,
@@ -34,7 +35,12 @@ function RecentVideos() {
       </Headers>
       <Body>
         <VideoContainer>
-          <Image src={Video} alt="" />
+          <Extink
+            href="https://www.youtube.com/watch?v=9SJCxBC_RlM&ab_channel=dynaskillsLtd."
+            target="_blank"
+          >
+            <Image src={Video} alt="" />
+          </Extink>
           <P>
             <span style={{ fontWeight: "900" }}>
               The Challenge of Connecting generations

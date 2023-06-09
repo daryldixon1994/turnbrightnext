@@ -1,6 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
-import  Img  from "../../assets/images/world-of-upskilling.png";
+import Img from "../../assets/images/world-of-upskilling.png";
 import Image from "next/image";
 // import "./styles.css";
 const Container = tw.div`w-[32%] `;
@@ -9,6 +9,7 @@ const H1 = tw.h1`font-black uppercase text-xl text-center mt-0 sticky top-0 bg-w
 const Title = tw.h4`ml-[15px] text-left uppercase`;
 const Duration = tw.h4``;
 const VideoItem = tw.div`box-border flex mb-4 p-1`;
+const ExtLink = tw.a``;
 const videos = [
   {
     title: "Erst Heim, dann Job: Was Schweizer Firmen Geflüchteten bieten",
@@ -62,7 +63,9 @@ function AsideVideos() {
           </VideoItem>
         ))}
       </SubContainer>
-      <Image src={Img} alt="" />
+      <ExtLink href="https://n1.dynaskills.com/auth/login" target="_blank">
+        <Image src={Img} alt="" />
+      </ExtLink>
     </Container>
   );
 }
