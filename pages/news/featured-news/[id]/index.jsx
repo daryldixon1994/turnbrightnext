@@ -4,7 +4,7 @@ import { data } from "@/components/featuredNews/data";
 import tw from "twin.macro";
 import MainSection from "@/components/singleNews/MainSection";
 
-const Container = tw.div`box-border max-w-[1360px] mx-auto min-h-[694px] border-2 border-black lg:pt-8`;
+const Container = tw.div`box-border max-w-[1360px] mx-auto min-h-[694px] lg:pt-8`;
 const Navigation = tw.div`box-border`;
 const NavP = tw.p`font-poppins text-base uppercase font-medium text-[#001436]`;
 const Intro = tw.div`box-border lg:mt-8`;
