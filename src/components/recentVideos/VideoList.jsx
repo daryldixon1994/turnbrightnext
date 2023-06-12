@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import Image from "next/image";
 import Img from "../../assets/images/swiss.png";
 // import "./styles.css";
-const Container = tw.div`w-[32%] relative box-border lg:h-[446.5px] flex flex-col overflow-y-auto px-4 py-4 font-poppins text-[#323030] shadow-gray-500 rounded-lg lg:mb-10`;
+const Container = tw.div`w-[32%] box-border lg:h-[446.5px] flex flex-col overflow-y-auto px-4 py-4 font-poppins text-[#323030] shadow-gray-500 rounded-lg lg:mb-10`;
 const SubContainer = tw.div``;
 const Title = tw.h4`ml-[15px] text-left uppercase text-[#001436] text-lg font-bold`;
 const VideoItem = tw.div`box-border mb-4 p-1`;

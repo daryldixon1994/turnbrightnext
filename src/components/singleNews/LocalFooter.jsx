@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import Logo from "../../assets/images/logo.svg";
 import Image from "next/image";
 import SocialMedia from "../common/SocialMedia";
-const Container = tw.div`box-border relative w-[100%] min-h-[350px] lg:mt-16 flex flex-col justify-center`;
+const Container = tw.div`box-border relative w-[100%] min-h-[350px] lg:mt-16 flex flex-col justify-center lg:mb-20`;
 const Bande = tw.div`min-h-[280px] bg-[rgb(0, 20, 54, 0.5)] relative`;
 const LeftBox = tw.div`box-border bg-[rgb(0, 20, 54)] h-[350px] w-[18%] absolute top-0 left-[2%] z-auto flex justify-center`;
 const SocialBox = tw.div`flex justify-end m-0`;

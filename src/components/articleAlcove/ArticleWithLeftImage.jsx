@@ -1,6 +1,6 @@
 import tw from "twin.macro";
 import SocialMedia from "../common/SocialMedia";
-import Image from "next/image";
+import Link from "next/link";
 import Signature from "../common/Signature";
 const Container = tw.div`box-border min-h-[650px] lg:mb-20`;
 const Head = tw.div``;
@@ -16,6 +16,7 @@ const P = tw.p`font-poppins text-base text-[#323030] uppercase lg:mb-2`;
 const NewContent = tw.div``;
 function ArticleWithLeftImage({
   subTitle,
+  id,
   title,
   image,
   desc,
@@ -24,6 +25,7 @@ function ArticleWithLeftImage({
   author,
   p2,
   iconColor,
+  link,
 }) {
   //   console.log(img);
   //   const Image = tw.img`w-[50%]`;
@@ -34,13 +36,15 @@ function ArticleWithLeftImage({
     <Container>
       <Head>
         <H2>{subTitle}</H2>
-        <H1 href="https://www.blick.ch/wirtschaft/trotz-akutem-fachkraeftemangel-73000-kaderleuten-in-der-schweiz-droht-jobverlust-id17746210.html" target="_blank">
+        <H1 href={`${link}`} target="_blank">
           {title}
         </H1>
       </Head>
       <Body>
         {/* <Pic> */}
-        <Image src={image} alt="" />
+        <Link href={`/article/article-alcove/${id}`}>
+          <img src={image} alt="visit" />
+        </Link>
         {/* </Pic> */}
         <Content>
           <div>

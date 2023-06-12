@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { data } from "@/components/featuredNews/data";
-import { dataSecond } from "@/components/OurEvent/data";
+// import { data } from "@/components/featuredNews/data";
+import { alcoveData } from "@/components/articleAlcove/articleAlcoveData";
 import tw from "twin.macro";
 import MainSection from "@/components/singleNews/MainSection";
 
@@ -20,14 +20,14 @@ const Author = tw.p`font-poppins `;
 function ArticleItem() {
   const router = useRouter();
   const singleArticle =
-    data.find((elt) => elt.id === router.query.id) ||
-    dataSecond.find((elt) => elt.id === router.query.id);
+    // data.find((elt) => elt.id === router.query.id) ||
+    alcoveData.find((elt) => elt.id === router.query.id);
   // console.log(singleArticle);
   return (
     <Container>
       <Navigation>
         <NavP>
-          You are here : Home / News / Featured News /
+          You are here : Home / Article / The Article Alcove /
           <strong> {singleArticle?.title}</strong>
         </NavP>
         <Intro>
@@ -41,8 +41,8 @@ function ArticleItem() {
             <Author>By {singleArticle?.author} </Author>
           </HeadDesc>
         </Intro>
+        <MainSection singleArticle={singleArticle} />
       </Navigation>
-      <MainSection singleArticle={singleArticle} />
     </Container>
   );
 }

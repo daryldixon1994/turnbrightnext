@@ -3,6 +3,7 @@ import tw from "twin.macro";
 import { HiShare } from "react-icons/hi";
 import NewsList from "../featuredNews/NewsList";
 import LocalFooter from "./LocalFooter";
+import LeaveComment from "../common/LeaveComment";
 const Main = tw.div`box-border w-[75%] min-h-[1200px] flex flex-col justify-between`;
 const Pic = tw.div`box-border w-[100%] h-[550px]`;
 const IntroDescBox = tw.div`flex items-center gap-2 lg:mt-5`;
@@ -48,8 +49,9 @@ function LeftSection({ pic, introDesc, desc }) {
         <HiShare size={28} />
         <Share>Share</Share>
       </ShareBox>
-      <NewsList data={data} border />
+      <NewsList data={data} border w={300} h={200} />
       <LocalFooter />
+      <LeaveComment />
     </Main>
   );
 }

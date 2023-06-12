@@ -60,7 +60,7 @@ function OurEvent() {
       <Media>
         <TwoCols>
           {dataSecond.map((elt, i) => (
-            <Link key={i} href={`/news/featured-news/${elt.id}`}>
+            <Link key={i} href={`/events/our-events/${elt.id}`}>
               <Col
                 className="event-media-col1"
                 style={{ backgroundImage: `url(${elt.pic})` }}
@@ -69,17 +69,15 @@ function OurEvent() {
               </Col>
             </Link>
           ))}
-          {/* <Col className="event-media-col1">
-            <H1>Schweiz: Immer mehr Ukraine-Flüchtlinge suchen einen Job</H1>
-          </Col>
-          <Col className="event-media-col2">
-            <H1>
-              Langes Anstehen am Flughafen ist nur der Anfang ++ Energiekrise
-              sorgt für grosse Nachfrage nach Solaranlagen
-            </H1>
-          </Col> */}
         </TwoCols>
-        <NewsList data={data2} h={350} p={10} w={300} border={false} itemH={320} />
+        <NewsList
+          data={data2}
+          h={350}
+          p={10}
+          w={300}
+          border={false}
+          itemH={320}
+        />
       </Media>
     </Container>
   );

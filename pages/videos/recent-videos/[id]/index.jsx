@@ -1,7 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { data } from "@/components/featuredNews/data";
-import { dataSecond } from "@/components/OurEvent/data";
+import { data } from "@/components/recentVideos/data";
 import tw from "twin.macro";
 import MainSection from "@/components/singleNews/MainSection";
 
@@ -20,20 +19,20 @@ const Author = tw.p`font-poppins `;
 function ArticleItem() {
   const router = useRouter();
   const singleArticle =
-    data.find((elt) => elt.id === router.query.id) ||
-    dataSecond.find((elt) => elt.id === router.query.id);
+    // data.find((elt) => elt.id === router.query.id) ||
+    data.find((elt) => elt.id === router.query.id);
   // console.log(singleArticle);
   return (
     <Container>
       <Navigation>
         <NavP>
-          You are here : Home / News / Featured News /
+          You are here : Home / Videos / Recent Videos /
           <strong> {singleArticle?.title}</strong>
         </NavP>
         <Intro>
           <SquareBox>
             <Square />
-            <SecondTitle>Jobs & Trainings</SecondTitle>
+            <SecondTitle>Music</SecondTitle>
           </SquareBox>
           <MainTitle>{singleArticle?.title}</MainTitle>
           <HeadDesc>
@@ -41,8 +40,8 @@ function ArticleItem() {
             <Author>By {singleArticle?.author} </Author>
           </HeadDesc>
         </Intro>
+        <MainSection singleArticle={singleArticle} />
       </Navigation>
-      <MainSection singleArticle={singleArticle} />
     </Container>
   );
 }
