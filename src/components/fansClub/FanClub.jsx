@@ -3,7 +3,9 @@ import tw from "twin.macro";
 import Header1 from "../common/Header1";
 import Image from "next/image";
 import Logo from "../../assets/images/logo.svg";
-const Container = tw.div`box-border lg:min-h-[850px] flex flex-col justify-between`;
+import Arrow from "./Arrow";
+import FanArticle from "./FanArticle";
+const Container = tw.div`box-border lg:min-h-[1580px] flex flex-col justify-between`;
 const Head = tw.div`flex items-center justify-center gap-[5px] mx-auto`;
 const Line1 = tw.div`lg:h-[2.5px] lg:w-[830px] bg-[#001436]`;
 const Line2 = tw.div`lg:h-[2.5px] lg:w-[240px] bg-[#001436]`;
@@ -35,6 +37,8 @@ function FanClub() {
           <Image src={Logo} alt="" width={150} height={150} />
         </Circle>
       </Box>
+      <Arrow />
+      <FanArticle />
     </Container>
   );
 }

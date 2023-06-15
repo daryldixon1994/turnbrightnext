@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import Header1 from "../common/Header1";
 import VideoList from "./VideoList";
 import Image from "next/image";
-import Video from "@/assets/images/video.png";
+// import Video from "@/assets/images/video.png";
 import { data } from "./data";
 import Link from "next/link";
 import Signature from "../common/Signature";

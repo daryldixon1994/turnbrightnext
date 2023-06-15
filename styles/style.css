@@ -97,3 +97,9 @@ body::-webkit-scrollbar-thumb {
 .fan-head:hover .fan-club-drop {
   display: block;
 }
+.img-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}

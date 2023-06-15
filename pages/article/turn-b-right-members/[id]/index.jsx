@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { data } from "@/components/recentVideos/data";
+import Head from "next/head";
+import { fanData } from "@/components/fansClub/data";
 import tw from "twin.macro";
 import MainSection from "@/components/singleNews/MainSection";
 
@@ -20,19 +21,22 @@ function ArticleItem() {
   const router = useRouter();
   const singleArticle =
     // data.find((elt) => elt.id === router.query.id) ||
-    data.find((elt) => elt.id === router.query.id);
+    fanData.find((elt) => elt.id === router.query.id);
   // console.log(singleArticle);
   return (
     <Container>
+      <Head>
+        <title>{singleArticle?.title}</title>
+      </Head>
       <Navigation>
         <NavP>
-          You are here : Home / Videos / Recent Videos /
+          You are here : Home / Article / Turn B. Right Members /
           <strong> {singleArticle?.title}</strong>
         </NavP>
         <Intro>
           <SquareBox>
             <Square />
-            <SecondTitle>Music</SecondTitle>
+            <SecondTitle>Technologie</SecondTitle>
           </SquareBox>
           <MainTitle>{singleArticle?.title}</MainTitle>
           <HeadDesc>
@@ -40,7 +44,7 @@ function ArticleItem() {
             <Author>By {singleArticle?.author} </Author>
           </HeadDesc>
         </Intro>
-        <MainSection singleArticle={singleArticle} recentVideos={true} />
+        <MainSection singleArticle={singleArticle} />
       </Navigation>
     </Container>
   );

@@ -5,10 +5,10 @@ import LeftSection from "./LeftSection";
 import LocalFooter from "./LocalFooter";
 
 const Container = tw.div`box-border flex justify-between lg:mb-24`;
-function MainSection({ singleArticle }) {
+function MainSection({ singleArticle, recentVideos }) {
   return (
     <Container>
-      <LeftSection {...singleArticle} />
+      <LeftSection {...singleArticle} recentVideos={recentVideos} />
       <RightSection />
     </Container>
   );

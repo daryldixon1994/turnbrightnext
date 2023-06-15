@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-// import { data } from "@/components/featuredNews/data";
+import Head from "next/head";
 import { alcoveData } from "@/components/articleAlcove/articleAlcoveData";
 import tw from "twin.macro";
 import MainSection from "@/components/singleNews/MainSection";
@@ -25,6 +25,9 @@ function ArticleItem() {
   // console.log(singleArticle);
   return (
     <Container>
+      <Head>
+        <title>{singleArticle?.title}</title>
+      </Head>
       <Navigation>
         <NavP>
           You are here : Home / Article / The Article Alcove /
