@@ -6,7 +6,7 @@ import Link from "next/link";
 const Container = tw.div`box-border bg-white`;
 const ImageBox = tw.div`box-border flex justify-center`;
 const Ul = tw.ul`flex justify-center gap-[50px] p-2`;
-const Li = tw.li`uppercase font-bold cursor-pointer text-[#001436] hover:underline hover:cursor-pointer`;
+const Li = tw.li`uppercase font-bold text-[#001436]`;
 // const Image = tw.img`w-[150px]`;
 // Image.defaultProps = {
 //   src: Logo,
@@ -25,9 +25,9 @@ function DownNavBarSection({ offset }) {
         <Image src={Logo} alt="" width={offset > 0 ? 85 : 150} />
       </ImageBox>
       <Ul>
-        <Link href="/">
+        {/* <Link href="/"> */}
           <Li>News</Li>
-        </Link>
+        {/* </Link> */}
         <Li>Events</Li>
         <Li>Articles</Li>
         <Li>Videos</Li>
