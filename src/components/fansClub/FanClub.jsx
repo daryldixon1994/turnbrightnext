@@ -24,7 +24,7 @@ function FanClub() {
       </Head>
       <Media>
         <Image src="/images/fan-img-1.png" alt="" width={350} height={350} />
-        <Image src="/images/fan-img-2.png" alt="" width={350} height={350} />
+        {/* <Image src="/images/fan-img-2.png" alt="" width={350} height={350} /> */}
         <Image src="/images/fan-img-3.png" alt="" width={350} height={350} />
       </Media>
       <Box>
