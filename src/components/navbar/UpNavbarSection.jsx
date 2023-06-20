@@ -26,8 +26,8 @@ function UpNavbarSection() {
         <FanDropDown className="fan-club-drop">
           <Ul2>
             <Li2>dynaskills® </Li2>
-            <Li2>Angestellte Shweiz</Li2>
-            <Li2>Swiss Supply</Li2>
+            {/* <Li2>Angestellte Shweiz</Li2>
+            <Li2>Swiss Supply</Li2> */}
           </Ul2>
         </FanDropDown>
       </FanClub>
