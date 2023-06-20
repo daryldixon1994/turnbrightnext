@@ -11,7 +11,7 @@ const FanClub = tw.div`box-border bg-[#FECB36] h-7 w-[180px] rounded-b-xl `;
 const Fan = tw.h5`text-[#001436] text-xl font-poppins font-black`;
 const FanHead = tw.div`flex items-center justify-center gap-[10px] cursor-pointer`;
 const NavigationAndLogin = tw.div`flex justify-around w-[70%] p-2`;
-const FanDropDown = tw.div`bg-[rgb(254, 203, 54, 0.6)] absolute top-[75%] w-[180px] min-h-[80px]`;
+const FanDropDown = tw.div`bg-[rgb(254, 203, 54, 0.6)] absolute top-[75%] w-[180px] min-h-[50px]`;
 const Ul2 = tw.ul`lg:px-3 py-2`;
 const Li2 = tw.li`list-none	text-[#001436] font-medium font-poppins lg:mb-1.5 
 `;
