@@ -1,6 +1,8 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import tw from "twin.macro";
 import ReactLoading from "react-loading";
+import Image from "next/image";
 
 const Container = tw.div`box-border grow px-2`;
 const H1 = tw.h1`font-poppins text-[#001436] text-xl font-bold`;
@@ -10,13 +12,16 @@ const Temp = tw.h3`font-poppins text-lg font-medium`;
 const Content = tw.div`flex items-center`;
 function Weather() {
   const [data, setData] = useState();
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=Zurich&units=metric&appid=751730611ff62810179139c9244bc34c`
     )
       .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => console.error(err));
+      .then((res) => {
+        setData(res);
+        setLoading(false);
+      });
   }, [data]);
 
   return (
@@ -24,11 +29,11 @@ function Weather() {
       <H1>
         Weather <P>today</P>
       </H1>
-      {data ? (
+      {data?.cod !== 429 && !loading ? (
         <Content>
           <H2>{data.name}</H2>
           {/* {data.weather[data.weather.length - 1].main} */}
-          <img
+          <Image
             src={`http://openweathermap.org/img/wn/${
               data.weather[data.weather.length - 1].icon
             }@2x.png`}

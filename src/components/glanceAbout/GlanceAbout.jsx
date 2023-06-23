@@ -15,7 +15,7 @@ function GlanceAbout() {
       <Left>
         <TitleWithBackground t1="At a glance about" t2="switzerland" w={350} />
         <DataBox>
-          <Weather />
+          {/* <Weather /> */}
           <Currency />
           <Languages />
         </DataBox>
