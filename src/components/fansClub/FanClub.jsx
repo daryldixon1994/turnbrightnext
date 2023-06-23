@@ -17,6 +17,7 @@ const Square = tw.div`box-border border-2 border-black w-[100%] h-[300px] absolu
 const Title = tw.div`box-border`;
 const Rectangle = tw.div`w-20 h-10 bg-[#FECB36] mb-[-1.4rem]`;
 const H2 = tw.h2`font-poppins font-extrabold text-[#001436] text-4xl uppercase`;
+const H21 = tw.span`font-normal font-poppins inline text-[#001436] text-4xl uppercase`;
 const H3 = tw(H2)`text-xl font-normal`;
 const H5 = tw(H2)`text-xl`;
 const Box = tw.div`bg-[#FECB36] text-[#001436] w-[100%] lg:min-h-[350px] relative flex flex-col items-center justify-center gap-12 py-32`;
@@ -42,7 +43,9 @@ function FanClub() {
       <TeamSlides>
         <Title>
           <Rectangle />
-          <H2>TEAM SLIDES</H2>
+          <H2>
+            TEAM <H21> SLIDES </H21>
+          </H2>
         </Title>
         <H3>Unleashing the Power of Collaboration</H3>
         <Media>

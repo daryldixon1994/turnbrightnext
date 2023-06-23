@@ -7,6 +7,7 @@ import OurEvent from "./OurEvent/OurEvent";
 import ArticleAlcove from "./articleAlcove/ArticleAlcove";
 import RecentVideos from "./recentVideos/RecentVideos";
 import FanClub from "./fansClub/FanClub";
+import GlanceAbout from "./glanceAbout/GlanceAbout";
 // import ContactUs from "./contactUs/ContactUs";
 // import RecentNews from "@/components/main/RecentNews";
 // import RecentVideos from "@/components/main/RecentVideos";
@@ -18,6 +19,7 @@ function HomePage() {
       {/* <ContactUs /> */}
       <IntroSection />
       <Main>
+        <GlanceAbout />
         <FeaturedNews />
         <OurEvent />
         <ArticleAlcove />

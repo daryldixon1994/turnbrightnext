@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import Flag from "react-world-flags";
-import { FaUserCircle } from "react-icons/fa";
+// import { FaUserCircle } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 const Container = tw.div`box-border flex justify-end bg-[#001436] text-[#FECB36] relative`;
 const Ul = tw.ul`box-border flex justify-evenly w-[60%]`;
@@ -12,10 +12,16 @@ const Fan = tw.h5`text-[#001436] text-xl font-poppins font-black`;
 const FanHead = tw.div`flex items-center justify-center gap-[10px] cursor-pointer`;
 const NavigationAndLogin = tw.div`flex justify-around w-[70%] p-2`;
 const FanDropDown = tw.div`bg-[rgb(254, 203, 54, 0.6)] absolute top-[75%] w-[180px] min-h-[50px]`;
-const Ul2 = tw.ul`lg:px-3 py-2`;
-const Li2 = tw.li`list-none	text-[#001436] font-medium font-poppins lg:mb-1.5 
-`;
+const Ul2 = tw.ul`lg:py-2`;
+const Li2 = tw.li`lg:px-3 py-1 list-none text-[#001436] font-medium font-poppins hover:bg-[#001436] hover:text-[#FECB36]`;
 function UpNavbarSection() {
+  const mediaImgs = [
+    { name: "Yonis", pic: "/images/fan-img1.png" },
+    { name: "Sarra", pic: "/images/fan-img2.png" },
+    { name: "Richard", pic: "/images/fan-img3.png" },
+    { name: "Fred", pic: "/images/fan-img4.png" },
+    { name: "Elodie", pic: "/images/fan-img5.png" },
+  ];
   return (
     <Container>
       <FanClub className="fan-head">
@@ -25,9 +31,14 @@ function UpNavbarSection() {
         </FanHead>
         <FanDropDown className="fan-club-drop">
           <Ul2>
-            <Li2>dynaskills® </Li2>
-            {/* <Li2>Angestellte Shweiz</Li2>
-            <Li2>Swiss Supply</Li2> */}
+            <Li2>
+              <a href="https://dynaskills-dynajobs.com/" target="_blank">
+                dynaskills®
+              </a>
+            </Li2>
+            {mediaImgs.map((elt, i) => (
+              <Li2 key={i}> {elt.name} </Li2>
+            ))}
           </Ul2>
         </FanDropDown>
       </FanClub>
