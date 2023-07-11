@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import tw from "twin.macro";
 import Header1 from "../common/Header1";
@@ -5,6 +6,7 @@ import Image from "next/image";
 import Logo from "../../assets/images/logo.svg";
 import Arrow from "./Arrow";
 import FanArticle from "./FanArticle";
+import FanLatestArticles from "../fanLatestArticles/FanLatestArticles";
 const Container = tw.div`box-border lg:min-h-[1580px] flex flex-col justify-between`;
 const Head = tw.div`flex items-center justify-center gap-[5px] mx-auto`;
 const Line1 = tw.div`lg:h-[2.5px] lg:w-[830px] bg-[#001436]`;
@@ -24,13 +26,34 @@ const Box = tw.div`bg-[#FECB36] text-[#001436] w-[100%] lg:min-h-[350px] relativ
 const Circle = tw.div`box-border rounded-full p-2 bg-white w-[150px] h-[150px] absolute bottom-[-6%] left-[-3%]`;
 const H1 = tw.h1`font-bold text-6xl font-poppins uppercase`;
 const P = tw.p`font-semibold text-xl font-poppins uppercase w-[55%] text-center leading-loose`;
+const Pfan = tw.p`font-poppins font-semibold  text-[#001436] uppercase`;
 function FanClub() {
   const mediaImgs = [
-    { name: "Yonis", pic: "/images/fan-img1.png" },
-    { name: "Sarra", pic: "/images/fan-img2.png" },
-    { name: "Richard", pic: "/images/fan-img3.png" },
-    { name: "Fred", pic: "/images/fan-img4.png" },
-    { name: "Elodie", pic: "/images/fan-img5.png" },
+    {
+      name: "Yonis",
+      pic: "/images/fan-img1.png",
+      desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+    },
+    {
+      name: "Sarra",
+      pic: "/images/fan-img2.png",
+      desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+    },
+    {
+      name: "Richard",
+      pic: "/images/fan-img3.png",
+      desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+    },
+    {
+      name: "Fred",
+      pic: "/images/fan-img4.png",
+      desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+    },
+    {
+      name: "Elodie",
+      pic: "/images/fan-img5.png",
+      desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+    },
   ];
 
   return (
@@ -57,6 +80,9 @@ function FanClub() {
               />
               <Square />
               <H5> {img.name} </H5>
+              <Pfan>
+                {img.desc}
+              </Pfan>
             </Item>
           ))}
           {/* <Image src="/images/fan-img-1.png" alt="" width={350} height={350} /> */}
@@ -74,6 +100,7 @@ function FanClub() {
       </Box>
       <Arrow />
       <FanArticle />
+      <FanLatestArticles/>
     </Container>
   );
 }

@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import ArticleSchema from "./ArticleSchema";
 import { fanData } from "./data";
 
-const Container = tw.div`box-border lg:flex lg:justify-between lg:min-h-[600px]`;
+const Container = tw.div`box-border lg:flex lg:justify-between lg:min-h-[600px] lg:mb-20`;
 const RightBloc = tw.div`box-border w-[25%] flex flex-col justify-between`;
 const H1 = tw.h1`font-poppins font-medium uppercase text-3xl text-[#001436]`;
 const Span = tw.span`font-extrabold`;

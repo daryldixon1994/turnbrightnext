@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { data } from "@/components/recentVideos/data";
 import tw from "twin.macro";
 import MainSection from "@/components/singleNews/MainSection";
-
+import PublicLayout from "@/components/PublicLayout";
 const Container = tw.div`box-border max-w-[1360px] mx-auto min-h-[694px] lg:pt-8`;
 const Navigation = tw.div`box-border`;
 const NavP = tw.p`font-poppins text-base uppercase font-medium text-[#001436]`;
@@ -45,5 +45,7 @@ function ArticleItem() {
     </Container>
   );
 }
-
+ArticleItem.getLayout = function getLayout(page) {
+  return <PublicLayout>{page}</PublicLayout>;
+};
 export default ArticleItem;

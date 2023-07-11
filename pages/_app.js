@@ -16,13 +16,14 @@ export default function App({ Component, pageProps }) {
     // window.removeEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [offset]);
-  return (
+  const getLayout = Component.getLayout || ((page) => page);
+  return getLayout(
     <>
       <GlobalStyles />
       <ContactUs />
-      <NavBar offset={offset} />
+      {/* <NavBar offset={offset} /> */}
       <Component {...pageProps} />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

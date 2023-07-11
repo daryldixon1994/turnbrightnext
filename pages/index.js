@@ -1,5 +1,6 @@
 import HomePage from "@/components/HomePage";
 import Head from "next/head";
+import PublicLayout from "@/components/PublicLayout";
 export default function Home() {
   return (
     <div>
@@ -10,3 +11,6 @@ export default function Home() {
     </div>
   );
 }
+Home.getLayout = function getLayout(page) {
+  return <PublicLayout>{page}</PublicLayout>;
+};
