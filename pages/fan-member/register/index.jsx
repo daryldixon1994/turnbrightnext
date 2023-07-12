@@ -3,7 +3,7 @@ import Illustration from "@/components/fanMember/Illustration";
 import RegisterForm from "@/components/fanMember/RegisterForm";
 import tw from "twin.macro";
 
-const Container = tw.div`box-border flex`;
+const Container = tw.div`box-border lg:flex`;
 
 function FanMmeberRegister() {
   return (

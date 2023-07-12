@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import tw from "twin.macro";
 import Logo from "../../assets/images/logo.svg";
-import Link from "next/link";
+// import Link from "next/link";
 const Container = tw.div`box-border bg-white`;
 const ImageBox = tw.div`box-border flex justify-center`;
 const Ul = tw.ul`flex justify-center gap-[50px] p-2`;

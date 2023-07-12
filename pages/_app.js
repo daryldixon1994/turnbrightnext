@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { GlobalStyles } from "twin.macro";
-import NavBar from "@/components/navbar/NavBar";
-import Footer from "@/components/footer/Footer";
+import "semantic-ui-css/semantic.min.css";
 import "../styles/style.css";
 import ContactUs from "@/components/contactUs/ContactUs";
 export default function App({ Component, pageProps }) {
@@ -20,7 +19,7 @@ export default function App({ Component, pageProps }) {
   return getLayout(
     <>
       <GlobalStyles />
-      <ContactUs />
+      {/* <ContactUs /> */}
       {/* <NavBar offset={offset} /> */}
       <Component {...pageProps} />
       {/* <Footer /> */}

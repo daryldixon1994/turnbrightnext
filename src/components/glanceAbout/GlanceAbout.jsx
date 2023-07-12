@@ -19,7 +19,7 @@ const P = tw.p`font-poppins text-[#001436] text-lg font-medium`;
 const LeftImage = tw.div`box-border flex-1  h-[202px] rounded-3xl`;
 const RightImage = tw.div`box-border flex-1  h-[327px] rounded-3xl`;
 const StartNow = tw.button`w-fit bg-[#FECB36] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] px-4 py-2 font-poppins text-[#001436] text-lg font-bold rounded-full border-4 border-white`;
-const HornBox = tw.div`bg-[#FECB36] border-4 border-white w-12 h-20 absolute top-3 right-0 rounded-full`;
+const HornBox = tw.div`bg-[#FECB36] border-4 border-white w-12 h-20 absolute top-2 right-0 rounded-full`;
 const ArrowBox = tw.div`box-border flex justify-end  w-[90%]`;
 const Horn = tw.div`box-border absolute -top-5 -left-2`;
 function GlanceAbout() {

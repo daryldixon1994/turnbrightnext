@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "./navbar/NavBar";
 import Footer from "./footer/Footer";
+import ContactUs from "./contactUs/ContactUs";
 function PublicLayout({ children }) {
   const [offset, setOffset] = useState(0);
   useEffect(() => {
@@ -14,6 +15,7 @@ function PublicLayout({ children }) {
   }, [offset]);
   return (
     <div>
+      <ContactUs />
       <NavBar offset={offset} />
       <main> {children} </main>
       <Footer />
